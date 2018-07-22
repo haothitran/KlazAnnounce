@@ -1,21 +1,9 @@
 local addon, ns = ...
-local C = {}
 local T = {}
-ns.C = C
 ns.T = T
 
 --------------------------------------------------------------------------------
--- // CONFIG
---------------------------------------------------------------------------------
-
-C.Announce = {
-  ['All'] = true,   -- receive notification for spell casts of party/raid members
-  ['Self'] = true,  -- receive notification for self casts
-  ['Say'] = false,  -- announce when you cast certain spells while in party/raid
-}
-
---------------------------------------------------------------------------------
--- // FILTER SPELLS
+-- // CORE / FILTERS
 --------------------------------------------------------------------------------
 -- white list filter for spells
 -- retrieve spell id from wowhead links

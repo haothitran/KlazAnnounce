@@ -3,6 +3,9 @@
 ## Author: Klaz
 ## Notes: Chat text indicators for when important friendly spells and abilities are used.
 
-Localization.lua
-Config.lua
-Spells.lua
+Core\Localization.lua
+Core\Config.lua
+Core\Filters.lua
+Core\Temp.lua
+
+Modules\Spells.lua

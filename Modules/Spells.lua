@@ -4,7 +4,7 @@ local L = ns.L
 local T = ns.T
 
 --------------------------------------------------------------------------------
--- // SPELLS
+-- // MODULES / SPELLS
 --------------------------------------------------------------------------------
 
 local f = CreateFrame('Frame')
@@ -14,7 +14,6 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
   local spells = T.FilterSpells
   local _, _, difficultyID = GetInstanceInfo()
   if difficultyID == 0 or event ~= 'SPELL_CAST_SUCCESS' then return end
-  if event ~= 'SPELL_CAST_SUCCESS' then return end
 
   if sourceName then sourceName = sourceName:gsub('%-[^|]+', '') end
   if destName then destName = destName:gsub('%-[^|]+', '') end
