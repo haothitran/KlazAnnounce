@@ -7,7 +7,7 @@ ns.C = C
 --------------------------------------------------------------------------------
 
 C.Announce = {
-  ['All'] = true,   -- receive notification for spell casts of party/raid members
-  ['Self'] = true,  -- receive notification for self casts
-  ['Say'] = false,  -- announce when you cast certain spells while in party/raid
+  ['All'] = true,   -- receive notification for spell casted by party/raid members
+  ['Self'] = true,  -- receive notification for spells cased by self
+  ['Say'] = false,  -- announce in /party /raid /instance when you cast certain spells
 }
