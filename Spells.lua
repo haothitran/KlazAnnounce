@@ -3,9 +3,9 @@ local C = ns.C
 local L = ns.L
 local T = ns.T
 
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- // SPELLS
-----------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
@@ -19,6 +19,7 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
   if sourceName then sourceName = sourceName:gsub('%-[^|]+', '') end
   if destName then destName = destName:gsub('%-[^|]+', '') end
 
+  -- cast by raid/party member
   if C.Announce.All == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then
     if not sourceName then return end
 
@@ -31,6 +32,8 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
         end
       end
     end
+
+  -- cast by player
   else
     if C.Announce.Self == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then return end
 
