@@ -62,6 +62,7 @@ T.FilterSpells = {
   73325,  -- Leap of Faith
   205369, -- Mind Bomb
   204263, -- Shining Force
+  265202, -- Holy Word: Salvation
 
   -- Rogue
   114018, -- Shroud of Concealment
