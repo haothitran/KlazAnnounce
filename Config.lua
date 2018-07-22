@@ -100,10 +100,10 @@ T.FilterSpells = {
   223657, -- Safeguard
 }
 
-----------------------------------------------------------------------
--- // CHECK CHAT CHANNEL
-----------------------------------------------------------------------
--- announce to appropriate chat channel
+--------------------------------------------------------------------------------
+-- // FUNCTIONS
+--------------------------------------------------------------------------------
+-- check which chat channel it would be appropriate to announce in
 
 T.ChatChannel = function(warning)
   if (not IsInGroup(LE_PARTY_CATEGORY_HOME) or not IsInRaid(LE_PARTY_CATEGORY_HOME)) and IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
