@@ -25,8 +25,10 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
     for i, spells in pairs(spells) do
       if spellID == spells then
         if destName == nil then
+          -- Player used Spell.
           print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
         else
+          -- Player1 used Spell -> Player2.
           print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
         end
       end
@@ -40,14 +42,18 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
       if spellID == spells then
         if destName == nil then
           if C.Announce.Say == true then
+            -- announce when Player used Spell.
             SendChatMessage(string.format('%s '..L.SPELLS..' %s.', sourceName, GetSpellLink(spellID)), T.ChatChannel())
           else
+            -- Player used Spell.
             print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
           end
         else
           if C.Announce.Say == true then
+            -- announce when Player1 used Spell -> Player2.
             SendChatMessage(GetSpellLink(spellID)..' -> '..destName..'.', T.ChatChannel())
           else
+            -- Player1 used Spell -> Player2.
             print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
           end
         end
