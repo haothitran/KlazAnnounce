@@ -43,7 +43,7 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
         if destName == nil then
           if C.Announce.Say == true then
             -- announce when Player used Spell.
-            SendChatMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID))..'.', T.ChatChannel())
+            SendChatMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..'.', T.ChatChannel())
           else
             -- Player used Spell.
             print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
