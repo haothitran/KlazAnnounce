@@ -9,7 +9,7 @@ local T = ns.T
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
-f:SetScript("OnEvent", function(self)
+f:SetScript('OnEvent', function(self)
 local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
   local spells = T.FilterSpells
   local _, _, difficultyID = GetInstanceInfo()
