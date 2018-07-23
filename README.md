@@ -2,7 +2,7 @@
 
 A World of Warcraft add-on that displays chat text indicators for when important friendly spells and abilities are used in an instance while player is in a party or raid environment. Includes tooltip link for these spells and abilities to easily access information about them rather than having to resort to referencing the in-game spellbook or external sources.
 
-There are no in-game options. Settings are hard-coded and can be changed by accessing the file `Config.lua` and editing values.
+There are no in-game options. Settings are hard-coded and can be changed by accessing the file `Core\Config.lua` and editing `true`/`false` values. Edit spells to track in `Core\Filters.lua` and follow included instructions on how to add and remove spells.
 
 ## Installation
 
