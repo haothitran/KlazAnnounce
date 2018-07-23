@@ -14,10 +14,12 @@ local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
 f:SetScript('OnEvent', function(self)
 local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
+  -- retrive spells and abilities
   local spells = T.FilterSpells
+  -- cast in instance
   local _, _, difficultyID = GetInstanceInfo()
   if difficultyID == 0 or event ~= 'SPELL_CAST_SUCCESS' then return end
-
+  -- source
   if sourceName then sourceName = sourceName:gsub('%-[^|]+', '') end
   if destName then destName = destName:gsub('%-[^|]+', '') end
 
@@ -36,7 +38,6 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
         end
       end
     end
-
   -- cast by player
   else
     if C.Announce.Self == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then return end
