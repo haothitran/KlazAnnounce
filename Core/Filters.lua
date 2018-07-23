@@ -10,6 +10,10 @@ ns.T = T
 -- http://www.wowhead.com/spell=2825/bloodlust
 
 T.FilterSpells = {
+  -- Racials
+  20549,  -- War Stomp
+  255654, -- Bull Rush
+
   -- Death Knight
   61999,  -- Raise Ally
   108199, -- Gorefiend's Grasp
@@ -30,6 +34,7 @@ T.FilterSpells = {
   102342, -- Iron Bark
   102793, -- Ursol's Vortex
   132469, -- Typhoon
+  197721, -- Flourish
 
   -- Hunter
   109248, -- Binding Shot
@@ -51,6 +56,7 @@ T.FilterSpells = {
   31821,  -- Aura Mastery
   115750, -- Blinding Light
   204018, -- Blessing of Spellwarding
+  204150, -- Aegis of Light
 
   -- Priest
   15286,  -- Vampiric Embrace
@@ -59,9 +65,11 @@ T.FilterSpells = {
   47788,  -- Guardian Spirit
   62618,  -- Power Word: Barrier
   64843,  -- Divine Hymn
+  64901,  -- Symbol of Hope
   73325,  -- Leap of Faith
-  205369, -- Mind Bomb
+  200183, -- Apotheosis
   204263, -- Shining Force
+  205369, -- Mind Bomb
   265202, -- Holy Word: Salvation
 
   -- Rogue
@@ -69,6 +77,7 @@ T.FilterSpells = {
 
   -- Shaman
   2825,   -- Bloodlust
+  17030,  -- Ankh
   20608,  -- Reincarnation
   32182,  -- Heroism
   51490,  -- Thunderstorm
@@ -81,11 +90,13 @@ T.FilterSpells = {
 
   -- Warlock
   20707,  -- Soulstone
+  30283,  -- Shadowfury
 
   -- Warrior
   46968,  -- Shockwave
-  97462,  -- Commanding Shout
+  97462,  -- Rallying Cry
   114030, -- Vigilance
+  122507, -- Rallying Cry
   223657, -- Safeguard
 }
 
