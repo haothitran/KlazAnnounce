@@ -6,6 +6,9 @@ local T = ns.T
 --------------------------------------------------------------------------------
 -- // MODULES / SPELLS
 --------------------------------------------------------------------------------
+-- notification for when important friendly spells and abilities are used
+-- in an instance while player is in a party or raid environment
+-- includes tooltip link for these spells and abilities
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
