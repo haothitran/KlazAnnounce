@@ -14,6 +14,13 @@ T.FilterSpells = {
   20549,  -- War Stomp
   255654, -- Bull Rush
 
+  -- Items
+  161399, -- Swap (Swapblaster)
+  146555,	-- Drums of Rage (MoP)
+	178207,	-- Drums of Fury (WoD)
+	230935,	-- Drums of the Mountain (Legion)
+	256740,	-- Drums of the Maelstrom (BfA)
+
   -- Death Knight
   61999,  -- Raise Ally
   108199, -- Gorefiend's Grasp
@@ -38,6 +45,7 @@ T.FilterSpells = {
 
   -- Hunter
   109248, -- Binding Shot
+  272678, -- Primal Rage
 
   -- Mage
   80353,  -- Time Warp
@@ -106,7 +114,8 @@ T.FilterSpells = {
 -- check which chat channel it would be appropriate to announce in
 
 T.ChatChannel = function(warning)
-  if (not IsInGroup(LE_PARTY_CATEGORY_HOME) or not IsInRaid(LE_PARTY_CATEGORY_HOME)) and IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
+  if (not IsInGroup(LE_PARTY_CATEGORY_HOME) or not IsInRaid(LE_PARTY_CATEGORY_HOME))
+  and IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
     return 'INSTANCE_CHAT'
   elseif IsInRaid(LE_PARTY_CATEGORY_HOME) then
     return 'RAID'
