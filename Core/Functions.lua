@@ -3,7 +3,11 @@ local T = {}
 ns.T = T
 
 --------------------------------------------------------------------------------
--- // CORE / FILTERS
+-- // CORE / FUNCTIONS
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-- // FILTER SPELLS
 --------------------------------------------------------------------------------
 -- white list filter for spells
 -- retrieve spell id from wowhead links
@@ -109,9 +113,9 @@ T.FilterSpells = {
 }
 
 --------------------------------------------------------------------------------
--- // FUNCTIONS
+-- // CHECK CHAT
 --------------------------------------------------------------------------------
--- check which chat channel it would be appropriate to announce in
+-- check which chat channel is appropriate to use for announcements
 
 T.ChatChannel = function(warning)
   if (not IsInGroup(LE_PARTY_CATEGORY_HOME) or not IsInRaid(LE_PARTY_CATEGORY_HOME))

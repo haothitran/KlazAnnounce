@@ -5,7 +5,7 @@
 
 Core\Localization.lua
 Core\Config.lua
-Core\Filters.lua
+Core\Functions.lua
 Core\Temp.lua
 
 Modules\Spells.lua
