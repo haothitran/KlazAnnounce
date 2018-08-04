@@ -74,6 +74,7 @@ T.FilterSpells = {
   15286,  -- Vampiric Embrace
   32375,  -- Mass Dispel
   33206,  -- Pain Suppression
+  47536,  -- Rapture
   47788,  -- Guardian Spirit
   62618,  -- Power Word: Barrier
   64843,  -- Divine Hymn
@@ -83,6 +84,7 @@ T.FilterSpells = {
   204263, -- Shining Force
   205369, -- Mind Bomb
   265202, -- Holy Word: Salvation
+  271466, -- Luminous Barrier
 
   -- Rogue
   114018, -- Shroud of Concealment
