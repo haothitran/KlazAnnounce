@@ -24,7 +24,7 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
   if destName then destName = destName:gsub('%-[^|]+', '') end
 
   -- cast by raid/party member
-  if C.Announce.All == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then
+  if C.Spells.All == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then
     if not sourceName then return end
 
     for i, spells in pairs(spells) do
@@ -40,12 +40,12 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
     end
   -- cast by player
   else
-    if C.Announce.Self == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then return end
+    if C.Spells.Self == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then return end
 
     for i, spells in pairs(spells) do
       if spellID == spells then
         if destName == nil then
-          if C.Announce.Say == true then
+          if C.Spells.Say == true then
             -- announce when Player used Spell.
             SendChatMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..'.', T.ChatChannel())
           else
@@ -53,7 +53,7 @@ local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = Co
             print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
           end
         else
-          if C.Announce.Say == true then
+          if C.Spells.Say == true then
             -- announce when Player1 used Spell -> Player2.
             SendChatMessage(GetSpellLink(spellID)..' -> '..destName..'.', T.ChatChannel())
           else
