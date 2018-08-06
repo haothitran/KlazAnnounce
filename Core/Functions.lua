@@ -163,6 +163,24 @@ T.FilterBadGear = {
 }
 
 --------------------------------------------------------------------------------
+-- // FILTER EVENTS
+--------------------------------------------------------------------------------
+-- white list filter for events
+-- retrieve item id from wowhead links
+-- http://www.wowhead.com/item=49040/jeeves
+
+T.FilterEvents = {
+		[22700] = true,		-- Field Repair Bot 74A
+		[44389] = true,		-- Field Repair Bot 110G
+		[54711] = true,		-- Scrapbot
+		[67826] = true,		-- Jeeves
+		[126459] = true,	-- Blingtron 4000
+		[161414] = true,	-- Blingtron 5000
+		[199109] = true,	-- Auto-Hammer
+		[226241] = true,	-- Codex of the Tranquil Mind
+}
+
+--------------------------------------------------------------------------------
 -- // CHECK CHAT
 --------------------------------------------------------------------------------
 -- check which chat channel is appropriate to use for announcements

@@ -8,6 +8,7 @@ ns.C = C
 
 C.BadGear = true    -- receive notification when unideal items are worn in instances
 C.Drinking = false  -- announce in /party when enemy is drinking in arenas
+C.Events = false    -- anounce in /party /raid /instance when items are placed down
 
 C.Interrupt = {
   ["Self"] = false, -- receive notification when you successfully interrupt a cast
@@ -28,6 +29,7 @@ if UnitName("player") == "Klazomaniac" or "Klazyne" or "Klaz" or "Klazio"
 or "Klaztrap" or "Klazzic" then
 
 C.Drinking = true
+C.Events = true
 
 C.Interrupt = {
   ["Self"] = true,
