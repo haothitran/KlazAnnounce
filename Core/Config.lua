@@ -6,6 +6,8 @@ ns.C = C
 -- // CORE / CONFIG
 --------------------------------------------------------------------------------
 
+C.Drinking = false,  -- announce in /party when enemy is drinking in arenas
+
 C.Interrupt = {
   ["Self"] = false, -- receive notification when you successfully interrupt a cast
   ["Say"] = false,  -- announce in /party /raid /instance
@@ -23,6 +25,8 @@ C.Spells = {
 
 if UnitName("player") == "Klazomaniac" or "Klazyne" or "Klaz" or "Klazio"
 or "Klaztrap" or "Klazzic" then
+
+C.Drinking = true
 
 C.Interrupt = {
   ["Self"] = true,

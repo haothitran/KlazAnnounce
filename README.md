@@ -6,6 +6,7 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 
 ## Features
 
+- Enemy drinking in arenas.
 - Interrupted spell by player.  
 - Cooldowns used by player and group members in instances and raids.
 

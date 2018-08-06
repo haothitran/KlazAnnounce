@@ -16,6 +16,7 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
+L.DRINKING = "is drinking"
 L.SPELLS = "used"
 
 local locale = GetLocale()
