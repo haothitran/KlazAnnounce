@@ -8,4 +8,5 @@ Core\Config.lua
 Core\Functions.lua
 Core\Temp.lua
 
+Modules\Interrupt.lua
 Modules\Spells.lua
