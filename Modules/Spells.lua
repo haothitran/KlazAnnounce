@@ -44,7 +44,7 @@ f:SetScript("OnEvent", function(self)
         if destName == nil then
           if C.Spells.Say == true then
             -- announce when Player used [Spell].
-            SendChatMessage(sourceName.." "..L.SPELLS.." "..GetSpellLink(spellID)..".", T.ChatChannel())
+            SendChatMessage(sourceName.." "..L.SPELLS.." "..GetSpellLink(spellID)..".", T.ChatChannel)
           else
             -- Player used Spell.
             print(format("|cff1994ff"..sourceName.." "..L.SPELLS.." |r"..GetSpellLink(spellID).."|cff1994ff.|r"))
@@ -52,7 +52,7 @@ f:SetScript("OnEvent", function(self)
         else
           if C.Spells.Say == true then
             -- announce when Player1 used [Spell] -> Player2.
-            SendChatMessage(GetSpellLink(spellID).." -> "..destName..".", T.ChatChannel())
+            SendChatMessage(GetSpellLink(spellID).." -> "..destName..".", T.ChatChannel)
           else
             -- Player1 used [Spell] -> Player2.
             print(format("|cff1994ff"..sourceName.." "..L.SPELLS.." |r"..GetSpellLink(spellID).."|cff1994ff -> "..destName..".|r"))
