@@ -16,17 +16,17 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
-L.SPELLS = 'used'
+L.SPELLS = "used"
 
 local locale = GetLocale()
-if locale == 'enUS' then return end
+if locale == "enUS" then return end
 
 --------------------------------------------------------------------------------
 -- // FRENCH
 --------------------------------------------------------------------------------
 
-if locale == 'frFR' then
+if locale == "frFR" then
 
-L.SPELLS = 'utilisé'
+L.SPELLS = "utilisé"
 
 return end

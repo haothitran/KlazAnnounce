@@ -27,7 +27,7 @@ T.FilterSpells = {
 
   -- Death Knight
   61999,  -- Raise Ally
-  108199, -- Gorefiend's Grasp
+  108199, -- Gorefiend"s Grasp
 
   -- Demon Hunter
   179057, -- Chaos Nova
@@ -43,7 +43,7 @@ T.FilterSpells = {
   77761,  -- Stampeding Roar
   78675,  -- Solar Beam
   102342, -- Iron Bark
-  102793, -- Ursol's Vortex
+  102793, -- Ursol"s Vortex
   132469, -- Typhoon
   197721, -- Flourish
 
@@ -122,12 +122,12 @@ T.FilterSpells = {
 T.ChatChannel = function(warning)
   if (not IsInGroup(LE_PARTY_CATEGORY_HOME) or not IsInRaid(LE_PARTY_CATEGORY_HOME))
   and IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
-    return 'INSTANCE_CHAT'
+    return "INSTANCE_CHAT"
   elseif IsInRaid(LE_PARTY_CATEGORY_HOME) then
-    return 'RAID'
+    return "RAID"
   elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
-    return 'PARTY'
+    return "PARTY"
   else
-    return 'SAY'
+    return "SAY"
   end
 end
