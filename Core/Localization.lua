@@ -18,6 +18,8 @@ end })
 
 L.BADGEAR_EQUIPPED = "Currently equipped"
 L.DRINKING = "is drinking"
+L.EVENTS_CAST = "is casting"
+L.EVENTS_CLICK = "Click"
 L.EVENTS_PREPARE = "has prepared a"
 L.EVENTS_PLACE = "has put down"
 L.SPELLS = "used"

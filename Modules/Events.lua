@@ -18,8 +18,8 @@ f:SetScript("OnEvent", function(self)
 	local srcName = srcName:gsub("%-[^|]+", "")
 	if subEvent == "SPELL_CAST_SUCCESS" then
 		-- Ritual of Summoning
-    if spellID == 698  and sourceGUID == UnitGUID("player") then
-			SendChatMessage(string.format(L_ANNOUNCE_FP_CLICK, srcName, GetSpellLink(spellID)), T.ChatChannel)
+    if spellID == 698 and sourceGUID == UnitGUID("player") then
+      SendChatMessage(srcName.." "..L.EVENTS_CAST.." "..GetSpellLink(spellID)..". "..L.EVENTS_CLICK.."!", T.ChatChannel)
     -- Spirit Cauldron
     elseif spellID == 188036 then
 			SendChatMessage(srcName.." "..L.EVENTS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
