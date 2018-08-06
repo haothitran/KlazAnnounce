@@ -5,7 +5,7 @@ local T = ns.T
 if C.Drinking ~= true then return end
 
 --------------------------------------------------------------------------------
--- // MODULES / INTERRUPT
+-- // MODULES / DRINKING
 --------------------------------------------------------------------------------
 
 local f = CreateFrame("Frame")
