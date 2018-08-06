@@ -11,7 +11,7 @@ if C.BadGear ~= true then return end
 local f = CreateFrame("Frame")
 f:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 f:SetScript("OnEvent", function(self, event)
-	if event ~= "ZONE_CHANGED_NEW_AREA" or not IsInInstance() then return end
+	if not event == "ZONE_CHANGED_NEW_AREA" or not IsInInstance() then return end
 
 	local item = {}
 	for i = 1, 17 do

@@ -11,7 +11,7 @@ local f = CreateFrame("Frame")
 f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 f:SetScript("OnEvent", function(self, _, ...)
   local _, event, _, sourceGUID, _, _, _, _, destName, _, _, _, _, _, spellID = CombatLogGetCurrentEventInfo()
-  if not (event == "SPELL_INTERRUPT" and sourceGUID == UnitGUID("player")) then return end
+  if not event == "SPELL_INTERRUPT" and not sourceGUID == UnitGUID("player") then return end
 
   if C.Interrupt.Say == true then
     local _, instanceType = IsInInstance()
