@@ -7,7 +7,7 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 ## Features
 
 - Interrupted spell by player.  
-- Cooldowns used by group members in instances and raids.
+- Cooldowns used by player and group members in instances and raids.
 
 There are no in-game options. Settings are hard-coded and can be changed by accessing the file `Core\Config.lua` and adjusting `true`/`false` values. Edit spells to track in `Core\Filters.lua` and follow included instructions on how to add and remove spells.
 
