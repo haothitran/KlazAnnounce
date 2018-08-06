@@ -16,6 +16,7 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
+L.BADGEAR_EQUIPPED = "Currently equipped"
 L.DRINKING = "is drinking"
 L.SPELLS = "used"
 

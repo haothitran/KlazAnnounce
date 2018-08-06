@@ -115,6 +115,54 @@ T.FilterSpells = {
 }
 
 --------------------------------------------------------------------------------
+-- // FILTER BAD GEAR
+--------------------------------------------------------------------------------
+-- white list filter for bad gear
+-- retrieve item id from wowhead links
+-- http://www.wowhead.com/item=6256/fishing-pole
+
+T.FilterBadGear = {
+	-- head
+	[1] = {
+		19972,	-- Lucky Fishing Hat
+		33820,	-- Weather-Beaten Fishing Hat
+		46349,	-- Chef's Hat
+  	88710,	-- Nat's Hat
+	},
+	-- neck
+	[2] = {
+		32757,	-- Blessed Medallion of Karabor
+	},
+	-- feet
+	[8] = {
+		19969,	-- Nat Pagle's Extreme Anglin' Boots
+		50287,	-- Boots of the Bay
+	},
+	-- back
+	[15] = {
+		65274,	-- Cloak of Coordination (Horde)
+		65360,	-- Cloak of Coordination (Alliance)
+	},
+	-- main-hand
+	[16] = {
+    6256,   -- Fishing Pole
+		19970,	-- Arcanite Fishing Pole
+		44050,	-- Mastercraft Kalu'ak Fishing Pole
+		45991,	-- Bone Fishing Pole
+		45992,	-- Jeweled Fishing Pole
+		84660,	-- Pandaren Fishing Pole
+		84661,	-- Dragon Fishing Pole
+		86559,	-- Frying Pan
+		116826,	-- Draenic Fishing Pole
+		116825,	-- Savage Fishing Pole
+	},
+	-- off-hand
+	[17] = {
+		86558,	-- Rolling Pin
+	},
+}
+
+--------------------------------------------------------------------------------
 -- // CHECK CHAT
 --------------------------------------------------------------------------------
 -- check which chat channel is appropriate to use for announcements
