@@ -33,6 +33,7 @@ C.Events = true
 
 C.Interrupt = {
   ["Self"] = true,
+  ["Say"] = false,
 }
 
 end
