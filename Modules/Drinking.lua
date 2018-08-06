@@ -15,6 +15,6 @@ f:SetScript("OnEvent", function(self, event, ...)
 
 	local unit, _, spellID = ...
 	if UnitIsEnemy("player", unit) and (GetSpellInfo(spellID) == GetSpellInfo(118358) or GetSpellInfo(spellID) == GetSpellInfo(167152) or GetSpellInfo(spellID) == GetSpellInfo(167268)) then
-		SendChatMessage(UnitClass(unit).." "..UnitName(unit).." "..L.DRINKING..".", T.ChatChannel())
+		SendChatMessage(UnitClass(unit).." "..UnitName(unit).." "..L.DRINKING..".", T.ChatChannel)
 	end
 end)
