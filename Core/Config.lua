@@ -6,7 +6,7 @@ ns.C = C
 -- // CORE / CONFIG
 --------------------------------------------------------------------------------
 
-C.Drinking = false,  -- announce in /party when enemy is drinking in arenas
+C.Drinking = false  -- announce in /party when enemy is drinking in arenas
 
 C.Interrupt = {
   ["Self"] = false, -- receive notification when you successfully interrupt a cast
