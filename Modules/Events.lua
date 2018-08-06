@@ -30,7 +30,7 @@ f:SetScript("OnEvent", function(self)
       SendChatMessage(srcName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
 		end
 	elseif event == "SPELL_CREATE" then
-		-- Ritual of Souls and MOLL-E
+		-- Ritual of Souls
 		if spellID == 29893 and sourceGUID == UnitGUID("player") then
       SendChatMessage(srcName.." "..L.EVENTS.PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
 		-- MOLLE-E
