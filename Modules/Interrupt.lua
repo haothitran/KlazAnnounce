@@ -16,6 +16,6 @@ f:SetScript("OnEvent", function(self, _, ...)
   if C.Interrupt.Say == true then
     SendChatMessage(INTERRUPTED.." "..destName..": "..GetSpellLink(spellID)..".", T.ChatChannel)
   else
-    print("|cff1994ff"..INTERRUPTED.." "..destName..":|r "..GetSpellLink(spellID).."cff1994ff.|r")
+    print("|cff1994ff"..INTERRUPTED.." "..destName..":|r "..GetSpellLink(spellID).."|cff1994ff.|r")
   end
 end)
