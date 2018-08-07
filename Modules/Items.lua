@@ -2,10 +2,10 @@ local addon, ns = ...
 local C = ns.C
 local L = ns.L
 local T = ns.T
-if C.Events ~= true then return end
+if C.Items ~= true then return end
 
 --------------------------------------------------------------------------------
--- // MODULES / EVENTS
+-- // MODULES / ITEMS
 --------------------------------------------------------------------------------
 
 local f = CreateFrame("Frame")
@@ -19,23 +19,23 @@ f:SetScript("OnEvent", function(self)
 	if event == "SPELL_CAST_SUCCESS" then
 		-- Ritual of Summoning
     if spellID == 698 and sourceName == UnitName("player") then
-      SendChatMessage(sourceName.." "..L.EVENTS_CAST.." "..GetSpellLink(spellID)..". "..L.EVENTS_CLICK.."!", T.ChatChannel(true))
+      SendChatMessage(sourceName.." "..L.ITEMS_CAST.." "..GetSpellLink(spellID)..". "..L.ITEMS_CLICK.."!", T.ChatChannel(true))
     -- Spirit Cauldron
     elseif spellID == 188036 then
-			SendChatMessage(sourceName.." "..L.EVENTS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
+			SendChatMessage(sourceName.." "..L.ITEMS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
     end
 	elseif event == "SPELL_SUMMON" then
 		-- bots (e.g. Jeeves, Blingtron)
 		if T.FilterEvents[spellID] then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
+      SendChatMessage(sourceName.." "..L.ITEMS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
 		end
 	elseif event == "SPELL_CREATE" then
 		-- Create Soulwell
 		if spellID == 29893 and sourceName == UnitName("player") then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
+      SendChatMessage(sourceName.." "..L.ITEMS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
 		-- MOLLE-E
     elseif spellID == 54710 then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
+      SendChatMessage(sourceName.." "..L.ITEMS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
     end
 	end
 end)

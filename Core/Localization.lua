@@ -20,10 +20,10 @@ L.BADGEAR_EQUIPPED = "Currently equipped"
 
 L.DRINKING = "is drinking"
 
-L.EVENTS_CAST = "is casting"
-L.EVENTS_CLICK = "Click"
-L.EVENTS_PREPARE = "has prepared a"
-L.EVENTS_PLACE = "has put down"
+L.ITEMS_CAST = "is casting"
+L.ITEMS_CLICK = "Click"
+L.ITEMS_PREPARE = "has prepared a"
+L.ITEMS_PLACE = "has put down"
 
 L.SPELLS = "used"
 

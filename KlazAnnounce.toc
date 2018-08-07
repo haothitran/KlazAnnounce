@@ -10,6 +10,6 @@ Core\Temp.lua
 
 Modules\BadGear.lua
 Modules\Drinking.lua
-Modules\Events.lua
+Modules\Items.lua
 Modules\Interrupt.lua
 Modules\Spells.lua
