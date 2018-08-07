@@ -19,23 +19,23 @@ f:SetScript("OnEvent", function(self)
 	if event == "SPELL_CAST_SUCCESS" then
 		-- Ritual of Summoning
     if spellID == 698 and sourceName == UnitName("player") then
-      SendChatMessage(sourceName.." "..L.EVENTS_CAST.." "..GetSpellLink(spellID)..". "..L.EVENTS_CLICK.."!", T.ChatChannel)
+      SendChatMessage(sourceName.." "..L.EVENTS_CAST.." "..GetSpellLink(spellID)..". "..L.EVENTS_CLICK.."!", T.ChatChannel(true))
     -- Spirit Cauldron
     elseif spellID == 188036 then
-			SendChatMessage(sourceName.." "..L.EVENTS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
+			SendChatMessage(sourceName.." "..L.EVENTS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
     end
 	elseif event == "SPELL_SUMMON" then
 		-- bots (e.g. Jeeves, Blingtron)
 		if T.FilterEvents[spellID] then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
+      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
 		end
 	elseif event == "SPELL_CREATE" then
 		-- Create Soulwell
 		if spellID == 29893 and sourceName == UnitName("player") then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
+      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
 		-- MOLLE-E
     elseif spellID == 54710 then
-      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel)
+      SendChatMessage(sourceName.." "..L.EVENTS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
     end
 	end
 end)
