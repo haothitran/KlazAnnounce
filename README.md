@@ -6,11 +6,13 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 
 ## Features
 
+- Bad gear equipped upon entering instances.
 - Enemy drinking in arenas.
+- Placed items to use in groups (e.g. Soulwells).
 - Interrupted spell by player.  
 - Cooldowns used by player and group members in instances and raids.
 
-There are no in-game options. Settings are hard-coded and can be changed by accessing the file `Core\Config.lua` and adjusting `true`/`false` values. Edit spells to track in `Core\Filters.lua` and follow included instructions on how to add and remove spells.
+There are no in-game options. Settings are hard-coded and can be changed by accessing the file `Core\Config.lua` and adjusting `true`/`false` values. Edit spells and items to track in `Core\Filters.lua` and follow included instructions on how to add and remove spells and items.
 
 ## Installation
 
