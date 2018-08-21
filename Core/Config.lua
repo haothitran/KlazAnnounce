@@ -7,12 +7,12 @@ ns.C = C
 --------------------------------------------------------------------------------
 
 C.BadGear = true    -- receive notification when unideal items are worn in instances
-C.Drinking = false  -- announce in /party when enemy is drinking in arenas
-C.Items = false     -- anounce in /party /raid /instance when items are placed down
+C.Drinking = true   -- announce in /party when enemy is drinking in arenas
+C.Items = true      -- anounce in /party /raid /instance when items are placed down
 
 C.Interrupt = {
-  ["Self"] = false, -- receive notification when you successfully interrupt a cast
-  ["Say"] = false,  -- announce in /party /raid /instance
+  ["Self"] = true, -- receive notification when you successfully interrupt a cast
+  ["Say"] = true,  -- announce in /party /raid /instance
 }
 
 C.Spells = {
@@ -20,20 +20,3 @@ C.Spells = {
   ["Self"] = true,  -- receive notification for spells casted by self
   ["Say"] = false,  -- announce in /party /raid /instance when you cast certain spells
 }
-
---------------------------------------------------------------------------------
--- // PROFILES
---------------------------------------------------------------------------------
-
-if UnitName("player") == "Klazomaniac" or "Klazyne" or "Klaz" or "Klazio"
-or "Klaztrap" or "Klazzic" then
-
-C.Drinking = true
-C.Items = true
-
-C.Interrupt = {
-  ["Self"] = true,
-  ["Say"] = false,
-}
-
-end
