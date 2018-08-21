@@ -8,6 +8,7 @@ Core\Config.lua
 Core\Functions.lua
 Core\Temp.lua
 
+Modules\Alerts.lua
 Modules\BadGear.lua
 Modules\Drinking.lua
 Modules\Items.lua
