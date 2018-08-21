@@ -17,7 +17,7 @@ f:SetScript("OnEvent", function(self)
     local _, instanceType = IsInInstance()
     if instanceType == "pvp" or instanceType == "arena" then return end
 
-    SendChatMessage(INTERRUPTED.." "..destName..": "..GetSpellLink(spellID)..".", T.ChatChannel(true))
+    SendChatMessage(INTERRUPTED.." "..destName..": "..GetSpellLink(spellID)..".", T.ChatChannel())
   else
     print("|cff1994ff"..INTERRUPTED.." "..destName..":|r "..GetSpellLink(spellID).."|cff1994ff.|r")
   end
