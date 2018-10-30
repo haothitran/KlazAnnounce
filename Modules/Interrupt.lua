@@ -14,6 +14,9 @@ f:SetScript("OnEvent", function(self)
   if not (event == "SPELL_INTERRUPT" and sourceGUID == UnitGUID("player")) then return end
 
   if C.Interrupt.Say == true then
+    local _, _, difficultyID = GetInstanceInfo()
+    if difficultyID == 0 then return end
+
     local _, instanceType = IsInInstance()
     if instanceType == "pvp" or instanceType == "arena" then return end
 
