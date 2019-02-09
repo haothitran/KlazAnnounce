@@ -48,6 +48,7 @@ T.FilterSpells = {
   197721, -- Flourish
 
   -- Hunter
+  34477,  -- Misdirection
   109248, -- Binding Shot
   272678, -- Primal Rage
 
@@ -87,6 +88,7 @@ T.FilterSpells = {
   271466, -- Luminous Barrier
 
   -- Rogue
+  57934,  -- Tricks of the Trade
   114018, -- Shroud of Concealment
 
   -- Shaman
