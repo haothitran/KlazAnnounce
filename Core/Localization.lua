@@ -30,8 +30,6 @@ if locale == "enUS" then return end
 -- // FRENCH
 --------------------------------------------------------------------------------
 
-if locale == "frFR" then
-
-L.SPELLS = "utilisé"
-
-return end
+-- if locale == "frFR" then
+--
+-- return end
