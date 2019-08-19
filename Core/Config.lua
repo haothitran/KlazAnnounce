@@ -6,8 +6,6 @@ ns.C = C
 -- // CORE / CONFIG
 --------------------------------------------------------------------------------
 
-C.BadGear = true    -- receive notification when unideal items are worn in instances
-C.Drinking = true   -- announce in /party when enemy is drinking in arenas
 C.Items = true      -- anounce in /party /raid /instance when items are placed down
 
 C.Interrupt = {

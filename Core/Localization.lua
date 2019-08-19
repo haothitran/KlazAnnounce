@@ -16,10 +16,6 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
-L.BADGEAR_EQUIPPED = "Currently equipped"
-
-L.DRINKING = "is drinking"
-
 L.ITEMS_CAST = "is casting"
 L.ITEMS_CLICK = "Click"
 L.ITEMS_PREPARE = "has prepared a"

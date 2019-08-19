@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80200
 ## Title: Klaz|cff1994ffAnnounce|r
 ## Author: Klaz
 ## Notes: Indicators for important events.
@@ -9,8 +9,6 @@ Core\Functions.lua
 Core\Temp.lua
 
 Modules\Alerts.lua
-Modules\BadGear.lua
-Modules\Drinking.lua
 Modules\Items.lua
 Modules\Interrupt.lua
 Modules\Spells.lua

@@ -7,6 +7,31 @@ ns.T = T
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
+-- // FILTER ITEMS
+--------------------------------------------------------------------------------
+-- white list filter for events
+-- retrieve item id from wowhead links
+-- http://www.wowhead.com/item=49040/jeeves
+
+T.FilterItemsCast = {
+  [188036] = true,  -- Spirit Cauldron
+  [276972] = true,  -- Mystical Cauldron
+  [298861] = true,  -- Greater Mystical Cauldron
+}
+
+T.FilterItemsSummon = {
+	[22700] = true,		-- Field Repair Bot 74A
+	[44389] = true,		-- Field Repair Bot 110G
+	[54711] = true,		-- Scrapbot
+	[67826] = true,		-- Jeeves
+	[126459] = true,	-- Blingtron 4000
+	[161414] = true,	-- Blingtron 5000
+	[199109] = true,	-- Auto-Hammer
+	[226241] = true,	-- Codex of the Tranquil Mind
+  [298926] = true,  -- Blingtron 7000
+}
+
+--------------------------------------------------------------------------------
 -- // FILTER SPELLS
 --------------------------------------------------------------------------------
 -- white list filter for spells
@@ -114,72 +139,6 @@ T.FilterSpells = {
   114030, -- Vigilance
   122507, -- Rallying Cry
   223657, -- Safeguard
-}
-
---------------------------------------------------------------------------------
--- // FILTER BAD GEAR
---------------------------------------------------------------------------------
--- white list filter for bad gear
--- retrieve item id from wowhead links
--- http://www.wowhead.com/item=6256/fishing-pole
-
-T.FilterBadGear = {
-	-- head
-	[1] = {
-		19972,	-- Lucky Fishing Hat
-		33820,	-- Weather-Beaten Fishing Hat
-		46349,	-- Chef's Hat
-  	88710,	-- Nat's Hat
-	},
-	-- neck
-	[2] = {
-		32757,	-- Blessed Medallion of Karabor
-	},
-	-- feet
-	[8] = {
-		19969,	-- Nat Pagle's Extreme Anglin' Boots
-		50287,	-- Boots of the Bay
-	},
-	-- back
-	[15] = {
-		65274,	-- Cloak of Coordination (Horde)
-		65360,	-- Cloak of Coordination (Alliance)
-	},
-	-- main-hand
-	[16] = {
-    6256,   -- Fishing Pole
-		19970,	-- Arcanite Fishing Pole
-		44050,	-- Mastercraft Kalu'ak Fishing Pole
-		45991,	-- Bone Fishing Pole
-		45992,	-- Jeweled Fishing Pole
-		84660,	-- Pandaren Fishing Pole
-		84661,	-- Dragon Fishing Pole
-		86559,	-- Frying Pan
-		116826,	-- Draenic Fishing Pole
-		116825,	-- Savage Fishing Pole
-	},
-	-- off-hand
-	[17] = {
-		86558,	-- Rolling Pin
-	},
-}
-
---------------------------------------------------------------------------------
--- // FILTER EVENTS
---------------------------------------------------------------------------------
--- white list filter for events
--- retrieve item id from wowhead links
--- http://www.wowhead.com/item=49040/jeeves
-
-T.FilterEvents = {
-		[22700] = true,		-- Field Repair Bot 74A
-		[44389] = true,		-- Field Repair Bot 110G
-		[54711] = true,		-- Scrapbot
-		[67826] = true,		-- Jeeves
-		[126459] = true,	-- Blingtron 4000
-		[161414] = true,	-- Blingtron 5000
-		[199109] = true,	-- Auto-Hammer
-		[226241] = true,	-- Codex of the Tranquil Mind
 }
 
 --------------------------------------------------------------------------------

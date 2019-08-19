@@ -21,12 +21,12 @@ f:SetScript("OnEvent", function(self)
     if spellID == 698 and sourceName == UnitName("player") then
       SendChatMessage(sourceName.." "..L.ITEMS_CAST.." "..GetSpellLink(spellID)..". "..L.ITEMS_CLICK.."!", T.ChatChannel(true))
     -- Spirit Cauldron
-    elseif spellID == 188036 then
+	elseif T.FilterItemsCast[spellID] then
 			SendChatMessage(sourceName.." "..L.ITEMS_PREPARE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
     end
 	elseif event == "SPELL_SUMMON" then
 		-- bots (e.g. Jeeves, Blingtron)
-		if T.FilterEvents[spellID] then
+		if T.FilterItemsSummon[spellID] then
       SendChatMessage(sourceName.." "..L.ITEMS_PLACE.." "..GetSpellLink(spellID)..".", T.ChatChannel(true))
 		end
 	elseif event == "SPELL_CREATE" then

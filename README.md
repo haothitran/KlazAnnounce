@@ -7,7 +7,6 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 ## Features
 
 - Bad gear equipped upon entering instances.
-- Enemy drinking in arenas.
 - Placed items to use in groups (e.g. Soulwells).
 - Interrupted spell by player.  
 - Cooldowns used by player and group members in instances and raids.
