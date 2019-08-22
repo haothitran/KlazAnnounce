@@ -20,14 +20,14 @@ T.FilterItemsCast = {
 }
 
 T.FilterItemsSummon = {
-	[22700] = true,		-- Field Repair Bot 74A
-	[44389] = true,		-- Field Repair Bot 110G
-	[54711] = true,		-- Scrapbot
-	[67826] = true,		-- Jeeves
-	[126459] = true,	-- Blingtron 4000
-	[161414] = true,	-- Blingtron 5000
-	[199109] = true,	-- Auto-Hammer
-	[226241] = true,	-- Codex of the Tranquil Mind
+  [22700] = true,		-- Field Repair Bot 74A
+  [44389] = true,		-- Field Repair Bot 110G
+  [54711] = true,		-- Scrapbot
+  [67826] = true,		-- Jeeves
+  [126459] = true,	-- Blingtron 4000
+  [161414] = true,	-- Blingtron 5000
+  [199109] = true,	-- Auto-Hammer
+  [226241] = true,	-- Codex of the Tranquil Mind
   [298926] = true,  -- Blingtron 7000
 }
 
@@ -46,9 +46,9 @@ T.FilterSpells = {
   -- Items
   161399, -- Swap (Swapblaster)
   146555,	-- Drums of Rage (MoP)
-	178207,	-- Drums of Fury (WoD)
-	230935,	-- Drums of the Mountain (Legion)
-	256740,	-- Drums of the Maelstrom (BfA)
+  178207,	-- Drums of Fury (WoD)
+  230935,	-- Drums of the Mountain (Legion)
+  256740,	-- Drums of the Maelstrom (BfA)
 
   -- Death Knight
   61999,  -- Raise Ally
