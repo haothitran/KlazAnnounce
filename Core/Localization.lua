@@ -16,20 +16,20 @@ end })
 -- // ENGLISH
 --------------------------------------------------------------------------------
 
-L.ITEMS_CAST = "is casting"
-L.ITEMS_CLICK = "Click"
-L.ITEMS_PREPARE = "has prepared a"
-L.ITEMS_PLACE = "has put down"
+L.ITEMS_CAST = 'is casting'
+L.ITEMS_CLICK = 'Click'
+L.ITEMS_PREPARE = 'has prepared a'
+L.ITEMS_PLACE = 'has put down'
 
-L.SPELLS = "used"
+L.SPELLS = 'used'
 
 local locale = GetLocale()
-if locale == "enUS" then return end
+if locale == 'enUS' then return end
 
 --------------------------------------------------------------------------------
 -- // FRENCH
 --------------------------------------------------------------------------------
 
--- if locale == "frFR" then
+-- if locale == 'frFR' then
 --
 -- return end
