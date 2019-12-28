@@ -9,7 +9,7 @@ if C.Interrupt.Self ~= true then return end
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
-f:SetScript('OnEvent', function(self)
+f:SetScript('OnEvent', function()
   local _, event, _, sourceGUID, _, _, _, _, destName, _, _, _, _, _, spellID = CombatLogGetCurrentEventInfo()
   if not (event == 'SPELL_INTERRUPT' and sourceGUID == UnitGUID('player')) then return end
 
