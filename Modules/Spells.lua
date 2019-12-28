@@ -12,7 +12,7 @@ local T = ns.T
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
-f:SetScript('OnEvent', function(self)
+f:SetScript('OnEvent', function()
   local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
   local spells = T.FilterSpells
 
@@ -25,7 +25,7 @@ f:SetScript('OnEvent', function(self)
   if C.Spells.All == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then
     if not sourceName then return end
 
-    for i, spells in pairs(spells) do
+    for _, spells in pairs(spells) do
       if spellID == spells then
         if destName == nil then
           -- PartyMember1 used [Spell].
@@ -39,7 +39,7 @@ f:SetScript('OnEvent', function(self)
   else
     if C.Spells.Self == true and not (sourceGUID == UnitGUID('player') and sourceName == UnitName('player')) then return end
 
-    for i, spells in pairs(spells) do
+    for _, spells in pairs(spells) do
       if spellID == spells then
         if destName == nil then
           if C.Spells.Say == true then
