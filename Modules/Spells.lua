@@ -13,11 +13,11 @@ local T = ns.T
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
 f:SetScript('OnEvent', function()
-  local _, event, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
+  local _, subEvent, _, sourceGUID, sourceName, _, _, _, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
   local spells = T.FilterSpells
 
   local _, _, difficultyID = GetInstanceInfo()
-  if difficultyID == 0 or event ~= 'SPELL_CAST_SUCCESS' then return end
+  if difficultyID == 0 or subEvent ~= 'SPELL_CAST_SUCCESS' then return end
 
   if sourceName then sourceName = sourceName:gsub('%-[^|]+', '') end
   if destName then destName = destName:gsub('%-[^|]+', '') end
