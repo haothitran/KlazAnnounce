@@ -122,6 +122,7 @@ T.FilterSpells = {
   20608,  -- Reincarnation
   32182,  -- Heroism
   51490,  -- Thunderstorm
+  65992,  -- Tremor Totem
   98008,  -- Spirit Link Totem
   108280, -- Healing Tide Totem
   114052, -- Ascendance
