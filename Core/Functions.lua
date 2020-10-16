@@ -51,6 +51,7 @@ T.FilterSpells = {
   256740,	-- Drums of the Maelstrom (BfA)
 
   -- Death Knight
+  51052,  -- Anti-Magic Zone
   61999,  -- Raise Ally
   108199, -- Gorefiend's Grasp
 
@@ -62,6 +63,7 @@ T.FilterSpells = {
   207684, -- Sigil of Misery
 
   -- Druid
+  99,     -- Incapacitating Roar
   740,    -- Tranquility
   20484,  -- Rebirth
   29166,  -- Innervate
@@ -106,9 +108,11 @@ T.FilterSpells = {
   64843,  -- Divine Hymn
   64901,  -- Symbol of Hope
   73325,  -- Leap of Faith
+  109964, -- Spirit Shell
   200183, -- Apotheosis
   204263, -- Shining Force
   205369, -- Mind Bomb
+  246287, -- Evangelism
   265202, -- Holy Word: Salvation
   271466, -- Luminous Barrier
 
@@ -118,6 +122,7 @@ T.FilterSpells = {
 
   -- Shaman
   2825,   -- Bloodlust
+  16191,  -- Mana Tide Totem
   17030,  -- Ankh
   20608,  -- Reincarnation
   32182,  -- Heroism
