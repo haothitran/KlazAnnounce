@@ -1,4 +1,4 @@
-## Interface: 80200
+## Interface: 90002
 ## Title: Klaz|cff1994ffAnnounce|r
 ## Author: Klaz
 ## Notes: Indicators for important events.
