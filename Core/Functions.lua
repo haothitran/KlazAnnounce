@@ -45,10 +45,11 @@ T.FilterSpells = {
 
   -- Items
   161399, -- Swap (Swapblaster)
-  146555,	-- Drums of Rage (MoP)
-  178207,	-- Drums of Fury (WoD)
+  146555,	-- Drums of Rage (Mists of Pandaria)
+  178207,	-- Drums of Fury (Warlords of Draenor)
   230935,	-- Drums of the Mountain (Legion)
-  256740,	-- Drums of the Maelstrom (BfA)
+  256740,	-- Drums of the Maelstrom (Battle for Azeroth)
+  309658, -- Drums of Deathly Ferocity (Shadowlands)
 
   -- Death Knight
   51052,  -- Anti-Magic Zone
