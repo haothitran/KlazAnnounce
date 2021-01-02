@@ -99,6 +99,7 @@ T.FilterSpells = {
   204150, -- Aegis of Light
 
   -- Priest
+  10060,  -- Power Infusion
   15286,  -- Vampiric Embrace
   32375,  -- Mass Dispel
   33206,  -- Pain Suppression
