@@ -17,6 +17,7 @@ T.FilterItemsCast = {
   [188036] = true,  -- Spirit Cauldron
   [276972] = true,  -- Mystical Cauldron
   [298861] = true,  -- Greater Mystical Cauldron
+  [307157] = true,  -- Eternal Cauldron (Shadowlands)
 }
 
 T.FilterItemsSummon = {
