@@ -6,10 +6,10 @@ There are no in-game options. Settings are hard-coded and can be changed by acce
 
 ## Features
 
-- Force certain warning sounds.
-- Placed items to use in groups (e.g. Soulwells).
-- Interrupted spell by player.  
-- Cooldowns used by player and group members in instances and raids.
+- Force certain warning sounds to play even when sound effects are disabled.
+- Announce when items are placed or used in groups (eg. Soulwells, Swapblaster, etc.).
+- Announce spells interrupted by player in groups.
+- Report cooldowns used by group in instances (eg. Blessing of Sacrifice, Tranquility, etc.).
 
 ## Installation
 
