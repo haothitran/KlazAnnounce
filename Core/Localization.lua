@@ -18,7 +18,7 @@ end })
 
 L.ITEMS_CAST = 'is casting'
 L.ITEMS_CLICK = 'Click'
-L.ITEMS_PREPARE = 'has prepared '
+L.ITEMS_PREPARE = 'has prepared'
 L.ITEMS_PLACE = 'has put down'
 
 L.SPELLS = 'used'
