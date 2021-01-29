@@ -25,8 +25,6 @@ C.Position = {
   ['YOffset'] = -110,               -- vertical offset from parent point
 }
 
-
-
 C.Items = true      -- anounce in /party /raid /instance when items are placed down
 
 C.Spells = {

@@ -2,6 +2,7 @@
 ## Title: Klaz|cff1994ffAnnounceSpells|r
 ## Author: Klaz
 ## Notes: Receive notification when certain party/raid cooldowns are used.
+## SavedVariables: KlazAnnounceSpellsDB
 
 Core\Localization.lua
 Core\Config.lua
