@@ -1,5 +1,5 @@
 ## Interface: 90002
-## Title: Klaz|cff1994ffAnnounce|r
+## Title: Klaz|cff1994ffAnnounceSpells|r
 ## Author: Klaz
 ## Notes: Indicators for important events.
 
@@ -8,7 +8,5 @@ Core\Config.lua
 Core\Functions.lua
 Core\Temp.lua
 
-Modules\Alerts.lua
 Modules\Items.lua
-Modules\Interrupt.lua
 Modules\Spells.lua

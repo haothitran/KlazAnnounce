@@ -10,6 +10,17 @@ local T = ns.T
 -- in an instance while player is in a party or raid environment
 -- includes tooltip link for these spells and abilities
 
+local spellframe = CreateFrame('ScrollingMessageFrame', 'KlazAnnounceSpells', UIParent)
+--s:SetPoint('CENTER', anchor, 'CENTER', 0, 4)
+spellframe:SetPoint("CENTER", UIParent, 0, 0)
+spellframe:SetSize(C.Size.Width, C.Size.Height)
+spellframe:SetFont(C.Font.Family, C.Font.Size, C.Font.Style)
+spellframe:SetShadowOffset(0, 0)
+spellframe:SetJustifyH('CENTER')
+spellframe:SetMaxLines(6)
+spellframe:SetTimeVisible(2)
+spellframe:SetFadeDuration(2)
+
 local f = CreateFrame('Frame')
 f:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
 f:SetScript('OnEvent', function()
@@ -17,7 +28,8 @@ f:SetScript('OnEvent', function()
   local spells = T.FilterSpells
 
   local _, _, difficultyID = GetInstanceInfo()
-  if difficultyID == 0 or subEvent ~= 'SPELL_CAST_SUCCESS' then return end
+  --if difficultyID == 0 or subEvent ~= 'SPELL_CAST_SUCCESS' then return end
+  if subEvent ~= 'SPELL_CAST_SUCCESS' then return end
 
   if sourceName then sourceName = sourceName:gsub('%-[^|]+', '') end
   if destName then destName = destName:gsub('%-[^|]+', '') end
@@ -29,10 +41,20 @@ f:SetScript('OnEvent', function()
       if spellID == spells then
         if destName == nil then
           -- PartyMember1 used [Spell].
-          print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
+          if C.Spells.Chat == true then
+            print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
+          end
+          if C.Spells.Frame == true then
+            spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID))
+          end
         else
           -- PartyMember1 used [Spell] -> PartyMember2.
-          print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
+          if C.Spells.Chat == true then
+            print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
+          end
+          if C.Spells.Frame == true then
+            spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..' -> '..destName)
+          end
         end
       end
     end
@@ -44,18 +66,38 @@ f:SetScript('OnEvent', function()
         if destName == nil then
           if C.Spells.Say == true then
             -- announce when Player used [Spell].
-            SendChatMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..'.', T.ChatChannel(true))
+            if C.Spells.Chat == true then
+              SendChatMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..'.', T.ChatChannel(true))
+            end
+            if C.Spells.Frame == true then
+              spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID))
+            end
           else
             -- Player used Spell.
-            print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
+            if C.Spells.Chat == true then
+              print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff.|r'))
+            end
+            if C.Spells.Frame == true then
+              spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID))
+            end
           end
         else
           if C.Spells.Say == true then
             -- announce when Player1 used [Spell] -> Player2.
-            SendChatMessage(GetSpellLink(spellID)..' -> '..destName..'.', T.ChatChannel(true))
+            if C.Spells.Chat == true then
+              SendChatMessage(GetSpellLink(spellID)..' -> '..destName..'.', T.ChatChannel(true))
+            end
+            if C.Spells.Frame == true then
+              spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..' -> '..destName)
+            end
           else
             -- Player1 used [Spell] -> Player2.
-            print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
+            if C.Spells.Chat == true then
+              print(format('|cff1994ff'..sourceName..' '..L.SPELLS..' |r'..GetSpellLink(spellID)..'|cff1994ff -> '..destName..'.|r'))
+            end
+            if C.Spells.Frame == true then
+              spellframe:AddMessage(sourceName..' '..L.SPELLS..' '..GetSpellLink(spellID)..' -> '..destName)
+            end
           end
         end
       end
