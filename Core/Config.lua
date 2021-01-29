@@ -8,13 +8,17 @@ ns.C = C
 
 C.Font = {
   ['Family'] = STANDARD_TEXT_FONT,  -- font family
-  ['Size'] = 14,                    -- font size
+  ['Size'] = 13,                    -- font size
   ['Style'] = 'OUTLINE',            -- font outline
+  ['Justify'] = 'LEFT',             -- text justification
+  ['Visible'] = 8,                  -- how long to show a line in seconds
+  ['Fade'] = 1,                     -- how long it takes a line to fade in seconds
 }
 
 C.Size = {
-  ['Width'] = 400,                   -- frame width
+  ['Width'] = 450,                   -- frame width
   ['Height'] = 80,                  -- frame height
+  ['Lines'] = 5,                    -- max number of lines to display
 }
 
 C.Position = {
