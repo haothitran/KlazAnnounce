@@ -14,9 +14,9 @@ ns.T = T
 -- http://www.wowhead.com/item=49040/jeeves
 
 T.FilterItemsCast = {
-  [188036] = true,  -- Spirit Cauldron
-  [276972] = true,  -- Mystical Cauldron
-  [298861] = true,  -- Greater Mystical Cauldron
+  [188036] = true,  -- Spirit Cauldron (Legion)
+  [276972] = true,  -- Mystical Cauldron (Battle for Azeroth)
+  [298861] = true,  -- Greater Mystical Cauldron (Battle for Azeroth)
   [307157] = true,  -- Eternal Cauldron (Shadowlands)
 }
 
@@ -25,11 +25,12 @@ T.FilterItemsSummon = {
   [44389] = true,		-- Field Repair Bot 110G
   [54711] = true,		-- Scrapbot
   [67826] = true,		-- Jeeves
-  [126459] = true,	-- Blingtron 4000
-  [161414] = true,	-- Blingtron 5000
+  [126459] = true,	-- Blingtron 4000 (Mists of Pandaria)
+  [161414] = true,	-- Blingtron 5000 (Warlords of Draenor)
   [199109] = true,	-- Auto-Hammer
-  [226241] = true,	-- Codex of the Tranquil Mind
-  [298926] = true,  -- Blingtron 7000
+  [226241] = true,	-- Codex of the Tranquil Mind (Legion)
+  [298926] = true,  -- Blingtron 7000 (Battle for Azeroth)
+  [324029] = true,  -- Codex of the Still Mind (Shadowlands)
 }
 
 --------------------------------------------------------------------------------
