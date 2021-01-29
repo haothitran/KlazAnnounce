@@ -80,6 +80,7 @@ T.FilterSpells = {
   -- Hunter
   34477,  -- Misdirection
   109248, -- Binding Shot
+  212431, -- Explosive Shot
   272678, -- Primal Rage
 
   -- Mage
@@ -97,6 +98,7 @@ T.FilterSpells = {
   1044,   -- Blessing of Freedom
   6940,   -- Blessing of Sacrifice
   31821,  -- Aura Mastery
+  31884,  -- Avenging Wrath
   115750, -- Blinding Light
   204018, -- Blessing of Spellwarding
   204150, -- Aegis of Light
