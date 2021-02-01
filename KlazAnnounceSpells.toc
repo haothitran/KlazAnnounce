@@ -10,4 +10,5 @@ Core\Functions.lua
 Core\Temp.lua
 
 Modules\Items.lua
-Modules\Spells.lua
+Modules\SpellsChat.lua
+Modules\SpellsFrame.lua
