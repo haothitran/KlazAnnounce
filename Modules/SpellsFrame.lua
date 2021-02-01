@@ -7,9 +7,7 @@ if C.Frame.Enable ~= true then return end
 --------------------------------------------------------------------------------
 -- // MODULES / SPELLS FRAME
 --------------------------------------------------------------------------------
--- notification for when important friendly spells and abilities are used
--- in an instance while player is in a party or raid environment
--- includes tooltip link for these spells and abilities
+-- seperate moveable frame for spell notifications
 
 local loader = CreateFrame('Frame')
 loader:RegisterEvent('ADDON_LOADED')
