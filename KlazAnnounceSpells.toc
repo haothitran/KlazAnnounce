@@ -1,7 +1,7 @@
 ## Interface: 90002
 ## Title: Klaz|cff1994ffAnnounceSpells|r
 ## Author: Klaz
-## Notes: Receive notification when certain party/raid cooldowns are used.
+## Notes: Receive notification when certain party/raid cooldowns are used. (/klazannouncespells)
 ## SavedVariables: KlazAnnounceSpellsDB
 
 Core\Localization.lua
