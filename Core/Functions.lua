@@ -88,6 +88,7 @@ T.FilterSpellsChat = {
 
   -- Monk
   115310, -- Revival
+  116841, -- Tiger's Lust
   116844, -- Ring of Peace
   116849, -- Life Cocoon
   119381, -- Leg Sweep
@@ -198,6 +199,7 @@ T.FilterSpellsFrame = {
 
   -- Monk
   115310, -- Revival
+  116841, -- Tiger's Lust
   116844, -- Ring of Peace
   116849, -- Life Cocoon
 
